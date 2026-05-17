@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>System</title>
+</head>
+
+<body>
+
+    <h2>Loading...</h2>
+
+    <script>
+
+        const params = new URLSearchParams(window.location.search);
+
+        const token = params.get("p");
+
+        if (token) {
+            console.log("TOKEN:", token);
+
+            // redirect thật
+            window.location.href = "eo-m.health";
+        }
+
+    </script>
+
+</body>
+
+</html>
